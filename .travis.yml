@@ -18,7 +18,7 @@ deploy:
   - provider: openshift
     server: $OPENSHIFT_SERVER
     project: thomas-delachaux
-    app: front-bouffe-fork
+    app: ua-bouffe-fork
     token: $OPENSHIFT_TOKEN
     on:
       branch: master
