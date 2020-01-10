@@ -1,12 +1,19 @@
 language: node_js
+
+node_js:
+  - lts
+
 branches:
   only:
     - master
     - dev
+
 cache: yarn
+
 script:
   - yarn
   - yarn lint
+
 deploy:
   - provider: openshift
     server: $OPENSHIFT_SERVER
